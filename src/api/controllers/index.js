@@ -5,9 +5,17 @@ import {
 	updateSample,
 	deleteSample,
 	searchSamples,
+	getAllSamplesByAdminId,
 } from "./Sample.controller";
 
-import { getAdminDetails, loginAdmin, registerAdmin, editAdminDetails, getAllHotelOwners } from "./Admin.controller";
+import {
+	getAdminDetails,
+	loginAdmin,
+	registerAdmin,
+	editAdminDetails,
+	getAllHotelOwners,
+	deleteAdmin,
+} from "./Admin.controller";
 
 export default {
 	//Sample Controllers
@@ -17,6 +25,7 @@ export default {
 	updateSample,
 	deleteSample,
 	searchSamples,
+	getAllSamplesByAdminId,
 
 	// Admin Controller
 	getAdminDetails,
@@ -24,4 +33,5 @@ export default {
 	registerAdmin,
 	editAdminDetails,
 	getAllHotelOwners,
+	deleteAdmin,
 };

@@ -1,6 +1,14 @@
-import { insertSample, getAllSamples, getOneSample, updateSample, deleteSample, searchSamples } from "./Sample.service";
+import {
+	insertSample,
+	getAllSamples,
+	getOneSample,
+	updateSample,
+	deleteSample,
+	searchSamples,
+	getAllSamplesByAdminId,
+} from "./Sample.service";
 
-import { getAdminDetails, authenticateAdmin, insertAdmin, editAdminDetails, getAllHotelOwners } from "./Admin.service";
+import { getAdminDetails, authenticateAdmin, insertAdmin, editAdminDetails, deleteAdmin } from "./Admin.service";
 
 export default {
 	// Sample services
@@ -10,11 +18,12 @@ export default {
 	updateSample,
 	deleteSample,
 	searchSamples,
+	getAllSamplesByAdminId,
 
 	// Admin Service
 	getAdminDetails,
 	authenticateAdmin,
 	insertAdmin,
 	editAdminDetails,
-	getAllHotelOwners,
+	deleteAdmin,
 };

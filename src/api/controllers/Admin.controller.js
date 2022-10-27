@@ -88,3 +88,16 @@ export const editAdminDetails = async (req, res, next) => {
 			next();
 		});
 };
+
+// Delete Admin
+export const deleteAdmin = async (req, res, next) => {
+	await AdminService.deleteAdmin(req.params.id)
+		.then((data) => {
+			req.handleResponse.successRespond(res)(data);
+			next();
+		})
+		.catch((error) => {
+			req.handleResponse.errorRespond(res)(error.message);
+			next();
+		});
+};

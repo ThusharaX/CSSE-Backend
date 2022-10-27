@@ -9,6 +9,10 @@ const SampleSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	admin_id: {
+		type: String,
+		required: true,
+	},
 });
 
 module.exports = mongoose.model("Sample", SampleSchema);

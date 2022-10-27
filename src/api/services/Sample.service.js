@@ -82,3 +82,14 @@ export const searchSamples = async (searchTerm) => {
 			throw new Error(error.message);
 		});
 };
+
+// Get all samples for admin_id=adminId
+export const getAllSamplesByAdminId = async (adminId) => {
+	return await SampleModel.find({ admin_id: adminId })
+		.then((samples) => {
+			return samples;
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

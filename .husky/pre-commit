@@ -3,14 +3,6 @@
 
 echo '🏗️👷 Hi, my name is LuciferX. I am responsible for testing your project before commit'
 
-# Run tests
-echo '🧪 Testing your project'
-yarn test ||
-(
-  echo '🧪❌ Some tests are failed 😭 Please fix them and try again'
-  false;
-)
-
 # Check Prettier standards
 echo '🌈 Checking Prettier standards'
 yarn check:format ||

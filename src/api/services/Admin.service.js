@@ -46,3 +46,14 @@ export const editAdminDetails = async (userId, Admin) => {
 			throw new Error(error.message);
 		});
 };
+
+// Delete Admin
+export const deleteAdmin = async (userId) => {
+	return await AdminModel.findByIdAndDelete(userId)
+		.then((Admin) => {
+			return Admin;
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

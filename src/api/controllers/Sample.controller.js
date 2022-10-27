@@ -78,4 +78,15 @@ export const searchSamples = async (request, response, next) => {
 		});
 };
 
-// Test
+// Get all samples by admin_id
+export const getAllSamplesByAdminId = async (request, response, next) => {
+	await SampleService.getAllSamplesByAdminId(request.params.id)
+		.then((data) => {
+			request.handleResponse.successRespond(response)(data);
+			next();
+		})
+		.catch((error) => {
+			request.handleResponse.errorRespond(response)(error.message);
+			next();
+		});
+};
