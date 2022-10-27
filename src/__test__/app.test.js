@@ -12,7 +12,7 @@ describe("Test the root path", () => {
 		it("should return 200 OK & Welcome text", async () => {
 			const response = await request(app).get("/");
 			expect(response.status).toBe(200);
-			expect(response.text).toBe("Travel Planning System");
+			expect(response.text).toBe("CSSE Project API");
 		});
 	});
 });
