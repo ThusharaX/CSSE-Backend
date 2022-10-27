@@ -1,1 +1,1 @@
-# Travel Planning System Backend Server
+# CSSE Project Backend Server
