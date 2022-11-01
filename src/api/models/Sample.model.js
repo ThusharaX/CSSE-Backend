@@ -9,8 +9,10 @@ const SampleSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	admin_id: {
-		type: String,
+	// admin_id refers to the admin who created the sample
+	admin: {
+		type: mongoose.Schema.Types.ObjectId,
+		ref: "Admin",
 		required: true,
 	},
 });

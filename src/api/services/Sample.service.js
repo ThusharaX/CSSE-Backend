@@ -85,7 +85,7 @@ export const searchSamples = async (searchTerm) => {
 
 // Get all samples for admin_id=adminId
 export const getAllSamplesByAdminId = async (adminId) => {
-	return await SampleModel.find({ admin_id: adminId })
+	return await SampleModel.find({ admin: adminId })
 		.then((samples) => {
 			return samples;
 		})
