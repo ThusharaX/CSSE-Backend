@@ -12,3 +12,16 @@ export const insertOrder = async (request, response, next) => {
 			next();
 		});
 };
+
+// Get all orders
+export const getAllOrders = async (request, response, next) => {
+	await OrderService.getAllOrders("orders")
+		.then(async (data) => {
+			request.handleResponse.successRespond(response)(data);
+			next();
+		})
+		.catch((error) => {
+			request.handleResponse.errorRespond(response)(error.message);
+			next();
+		});
+};

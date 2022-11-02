@@ -33,12 +33,15 @@ router.get("/manager/:id", middleware.manager_auth, controller.getManagerDetails
 router.put("/manager-edit/:id", middleware.manager_auth, controller.editManagerDetails);
 router.delete("/manager-delete/:id", controller.deleteManager);
 
-
 // Order endpoints
 router.post("/order/", controller.insertOrder);
+router.get("/order/", controller.getAllOrders);
 
 // Product endpoints
 router.post("/product/", controller.insertProduct);
+router.get("/product/", controller.getAllProducts);
+router.get("/product/:id", controller.getOneProduct);
+router.put("/product-edit/:id", controller.updateProduct);
 
 // SiteManager endpoints
 router.post("/site-manager/login", controller.loginSiteManager);
@@ -46,6 +49,5 @@ router.post("/site-manager/signup", controller.registerSiteManager);
 router.get("/site-manager/:id", middleware.siteManager_auth, controller.getSiteManagerDetails);
 router.put("/site-manager-edit/:id", middleware.siteManager_auth, controller.editSiteManagerDetails);
 router.delete("/site-manager-delete/:id", controller.deleteSiteManager);
-
 
 export default router;

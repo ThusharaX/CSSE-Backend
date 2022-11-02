@@ -18,9 +18,8 @@ import {
 	deleteManager,
 } from "./Manager.controller";
 
-
-import { insertOrder } from "./Order.controller";
-import { insertProduct } from "./Product.controller";
+import { insertOrder, getAllOrders } from "./Order.controller";
+import { insertProduct, getAllProducts, getOneProduct, updateProduct } from "./Product.controller";
 
 import {
 	getSiteManagerDetails,
@@ -29,7 +28,6 @@ import {
 	editSiteManagerDetails,
 	deleteSiteManager,
 } from "./SiteManager.controller";
-
 
 export default {
 	//Sample Controllers
@@ -55,18 +53,20 @@ export default {
 	editManagerDetails,
 	deleteManager,
 
-
 	// Order Controller
 	insertOrder,
+	getAllOrders,
 
 	// Product Controller
 	insertProduct,
+	getAllProducts,
+	getOneProduct,
+	updateProduct,
 
-	// SiteManager Controller
+	// Site Manager Controller
 	getSiteManagerDetails,
 	loginSiteManager,
 	registerSiteManager,
 	editSiteManagerDetails,
 	deleteSiteManager,
-
 };

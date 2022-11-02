@@ -11,3 +11,14 @@ export const insertOrder = async (orderData) => {
 			throw new Error(error.message);
 		});
 };
+
+// Get all orders
+export const getAllOrders = async () => {
+	return await OrderModel.find({})
+		.then((orders) => {
+			return orders;
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

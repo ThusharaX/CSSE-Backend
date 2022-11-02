@@ -18,10 +18,9 @@ import {
 	deleteManager,
 } from "./Manager.service";
 
+import { insertOrder, getAllOrders } from "./Order.service";
 
-import { insertOrder } from "./Order.service";
-
-import { insertProduct } from "./Product.service";
+import { insertProduct, getAllProducts, getOneProduct, updateProduct } from "./Product.service";
 
 import {
 	getSiteManagerDetails,
@@ -30,7 +29,6 @@ import {
 	editSiteManagerDetails,
 	deleteSiteManager,
 } from "./SiteManager.service";
-
 
 export default {
 	// Sample services
@@ -56,12 +54,15 @@ export default {
 	editManagerDetails,
 	deleteManager,
 
-
 	// Order Service
 	insertOrder,
+	getAllOrders,
 
 	// Product Service
 	insertProduct,
+	getAllProducts,
+	getOneProduct,
+	updateProduct,
 
 	// SiteManager Service
 	getSiteManagerDetails,
@@ -69,5 +70,4 @@ export default {
 	insertSiteManager,
 	editSiteManagerDetails,
 	deleteSiteManager,
-
 };
