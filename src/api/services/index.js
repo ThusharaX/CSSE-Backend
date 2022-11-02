@@ -18,6 +18,10 @@ import {
 	deleteManager,
 } from "./Manager.service";
 
+import { insertOrder } from "./Order.service";
+
+import { insertProduct } from "./Product.service";
+
 export default {
 	// Sample services
 	insertSample,
@@ -41,4 +45,10 @@ export default {
 	insertManager,
 	editManagerDetails,
 	deleteManager,
+
+	// Order Service
+	insertOrder,
+
+	// Product Service
+	insertProduct,
 };

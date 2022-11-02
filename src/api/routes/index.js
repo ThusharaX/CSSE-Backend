@@ -33,4 +33,10 @@ router.get("/manager/:id", middleware.manager_auth, controller.getManagerDetails
 router.put("/manager-edit/:id", middleware.manager_auth, controller.editManagerDetails);
 router.delete("/manager-delete/:id", controller.deleteManager);
 
+// Order endpoints
+router.post("/order/", controller.insertOrder);
+
+// Product endpoints
+router.post("/product/", controller.insertProduct);
+
 export default router;

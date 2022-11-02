@@ -18,6 +18,9 @@ import {
 	deleteManager,
 } from "./Manager.controller";
 
+import { insertOrder } from "./Order.controller";
+import { insertProduct } from "./Product.controller";
+
 export default {
 	//Sample Controllers
 	insertSample,
@@ -41,4 +44,10 @@ export default {
 	registerManager,
 	editManagerDetails,
 	deleteManager,
+
+	// Order Controller
+	insertOrder,
+
+	// Product Controller
+	insertProduct,
 };
