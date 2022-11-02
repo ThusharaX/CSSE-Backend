@@ -37,6 +37,14 @@ import {
 	deleteProcurementStaff,
 } from "./ProcurementStaff.controller";
 
+import {
+	getSupplierDetails,
+	loginSupplier,
+	registerSupplier,
+	editSupplierDetails,
+	deleteSupplier,
+} from "./Supplier.controller";
+
 export default {
 	//Sample Controllers
 	insertSample,
@@ -84,4 +92,11 @@ export default {
 	registerProcurementStaff,
 	editProcurementStaffDetails,
 	deleteProcurementStaff,
+
+	// Supplier Controller
+	getSupplierDetails,
+	loginSupplier,
+	registerSupplier,
+	editSupplierDetails,
+	deleteSupplier,
 };

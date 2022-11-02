@@ -38,6 +38,14 @@ import {
 	deleteProcurementStaff,
 } from "./ProcurementStaff.service";
 
+import {
+	getSupplierDetails,
+	authenticateSupplier,
+	insertSupplier,
+	editSupplierDetails,
+	deleteSupplier,
+} from "./Supplier.service";
+
 export default {
 	// Sample services
 	insertSample,
@@ -85,4 +93,11 @@ export default {
 	insertProcurementStaff,
 	editProcurementStaffDetails,
 	deleteProcurementStaff,
+
+	// Supplier Service
+	getSupplierDetails,
+	authenticateSupplier,
+	insertSupplier,
+	editSupplierDetails,
+	deleteSupplier,
 };

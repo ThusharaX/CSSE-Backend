@@ -57,4 +57,11 @@ router.get("/procurement-staff/:id", middleware.procurementStaff_auth, controlle
 router.put("/procurement-staff-edit/:id", middleware.procurementStaff_auth, controller.editProcurementStaffDetails);
 router.delete("/procurement-staff-delete/:id", controller.deleteProcurementStaff);
 
+// Supplier endpoints
+router.post("/supplier/login", controller.loginSupplier);
+router.post("/supplier/signup", controller.registerSupplier);
+router.get("/supplier/:id", middleware.supplier_auth, controller.getSupplierDetails);
+router.put("/supplier-edit/:id", middleware.supplier_auth, controller.editSupplierDetails);
+router.delete("/supplier-delete/:id", controller.deleteSupplier);
+
 export default router;
