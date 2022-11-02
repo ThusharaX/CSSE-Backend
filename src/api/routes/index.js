@@ -26,4 +26,11 @@ router.get("/admin/:id", middleware.admin_auth, controller.getAdminDetails);
 router.put("/admin-edit/:id", middleware.admin_auth, controller.editAdminDetails);
 router.delete("/admin-delete/:id", controller.deleteAdmin);
 
+// Manager endpoints
+router.post("/manager/login", controller.loginManager);
+router.post("/manager/signup", controller.registerManager);
+router.get("/manager/:id", middleware.manager_auth, controller.getManagerDetails);
+router.put("/manager-edit/:id", middleware.manager_auth, controller.editManagerDetails);
+router.delete("/manager-delete/:id", controller.deleteManager);
+
 export default router;

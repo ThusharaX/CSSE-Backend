@@ -13,9 +13,16 @@ import {
 	loginAdmin,
 	registerAdmin,
 	editAdminDetails,
-	getAllHotelOwners,
 	deleteAdmin,
 } from "./Admin.controller";
+
+import {
+	getManagerDetails,
+	loginManager,
+	registerManager,
+	editManagerDetails,
+	deleteManager,
+} from "./Manager.controller";
 
 export default {
 	//Sample Controllers
@@ -32,6 +39,12 @@ export default {
 	loginAdmin,
 	registerAdmin,
 	editAdminDetails,
-	getAllHotelOwners,
 	deleteAdmin,
+
+	// Manager Controller
+	getManagerDetails,
+	loginManager,
+	registerManager,
+	editManagerDetails,
+	deleteManager,
 };

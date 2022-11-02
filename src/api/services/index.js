@@ -10,6 +10,14 @@ import {
 
 import { getAdminDetails, authenticateAdmin, insertAdmin, editAdminDetails, deleteAdmin } from "./Admin.service";
 
+import {
+	getManagerDetails,
+	authenticateManager,
+	insertManager,
+	editManagerDetails,
+	deleteManager,
+} from "./Manager.service";
+
 export default {
 	// Sample services
 	insertSample,
@@ -26,4 +34,11 @@ export default {
 	insertAdmin,
 	editAdminDetails,
 	deleteAdmin,
+
+	// Manager Service
+	getManagerDetails,
+	authenticateManager,
+	insertManager,
+	editManagerDetails,
+	deleteManager,
 };
