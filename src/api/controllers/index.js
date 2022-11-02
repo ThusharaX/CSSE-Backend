@@ -8,13 +8,7 @@ import {
 	getAllSamplesByAdminId,
 } from "./Sample.controller";
 
-import {
-	getAdminDetails,
-	loginAdmin,
-	registerAdmin,
-	editAdminDetails,
-	deleteAdmin,
-} from "./Admin.controller";
+import { getAdminDetails, loginAdmin, registerAdmin, editAdminDetails, deleteAdmin } from "./Admin.controller";
 
 import {
 	getManagerDetails,

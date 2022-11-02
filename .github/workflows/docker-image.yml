@@ -2,18 +2,16 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "development" ]
+    branches: ["development"]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build & Push the Docker image
-      run: |
-        echo "${{ secrets.GHTOKEN }}" | docker login ghcr.io -u "ThusharaX" --password-stdin
-        docker build . --file Dockerfile --tag ghcr.io/thusharax/container-images/csse-backend:dev
-        docker push ghcr.io/thusharax/container-images/csse-backend:dev
+      - uses: actions/checkout@v3
+      - name: Build & Push the Docker image
+        run: |
+          echo "${{ secrets.GHTOKEN }}" | docker login ghcr.io -u "ThusharaX" --password-stdin
+          docker build . --file Dockerfile --tag ghcr.io/thusharax/container-images/csse-backend:dev
+          docker push ghcr.io/thusharax/container-images/csse-backend:dev
