@@ -33,4 +33,11 @@ router.get("/manager/:id", middleware.manager_auth, controller.getManagerDetails
 router.put("/manager-edit/:id", middleware.manager_auth, controller.editManagerDetails);
 router.delete("/manager-delete/:id", controller.deleteManager);
 
+// SiteManager endpoints
+router.post("/site-manager/login", controller.loginSiteManager);
+router.post("/site-manager/signup", controller.registerSiteManager);
+router.get("/site-manager/:id", middleware.siteManager_auth, controller.getSiteManagerDetails);
+router.put("/site-manager-edit/:id", middleware.siteManager_auth, controller.editSiteManagerDetails);
+router.delete("/site-manager-delete/:id", controller.deleteSiteManager);
+
 export default router;

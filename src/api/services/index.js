@@ -18,6 +18,14 @@ import {
 	deleteManager,
 } from "./Manager.service";
 
+import {
+	getSiteManagerDetails,
+	authenticateSiteManager,
+	insertSiteManager,
+	editSiteManagerDetails,
+	deleteSiteManager,
+} from "./SiteManager.service";
+
 export default {
 	// Sample services
 	insertSample,
@@ -41,4 +49,11 @@ export default {
 	insertManager,
 	editManagerDetails,
 	deleteManager,
+
+	// SiteManager Service
+	getSiteManagerDetails,
+	authenticateSiteManager,
+	insertSiteManager,
+	editSiteManagerDetails,
+	deleteSiteManager,
 };

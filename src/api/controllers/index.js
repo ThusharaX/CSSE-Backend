@@ -18,6 +18,14 @@ import {
 	deleteManager,
 } from "./Manager.controller";
 
+import {
+	getSiteManagerDetails,
+	loginSiteManager,
+	registerSiteManager,
+	editSiteManagerDetails,
+	deleteSiteManager,
+} from "./SiteManager.controller";
+
 export default {
 	//Sample Controllers
 	insertSample,
@@ -41,4 +49,11 @@ export default {
 	registerManager,
 	editManagerDetails,
 	deleteManager,
+
+	// SiteManager Controller
+	getSiteManagerDetails,
+	loginSiteManager,
+	registerSiteManager,
+	editSiteManagerDetails,
+	deleteSiteManager,
 };
