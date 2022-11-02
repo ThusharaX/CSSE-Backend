@@ -43,4 +43,11 @@ router.get("/product/", controller.getAllProducts);
 router.get("/product/:id", controller.getOneProduct);
 router.put("/product-edit/:id", controller.updateProduct);
 
+// SiteManager endpoints
+router.post("/site-manager/login", controller.loginSiteManager);
+router.post("/site-manager/signup", controller.registerSiteManager);
+router.get("/site-manager/:id", middleware.siteManager_auth, controller.getSiteManagerDetails);
+router.put("/site-manager-edit/:id", middleware.siteManager_auth, controller.editSiteManagerDetails);
+router.delete("/site-manager-delete/:id", controller.deleteSiteManager);
+
 export default router;

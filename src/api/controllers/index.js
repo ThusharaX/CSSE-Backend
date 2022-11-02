@@ -21,6 +21,14 @@ import {
 import { insertOrder, getAllOrders } from "./Order.controller";
 import { insertProduct, getAllProducts, getOneProduct, updateProduct } from "./Product.controller";
 
+import {
+	getSiteManagerDetails,
+	loginSiteManager,
+	registerSiteManager,
+	editSiteManagerDetails,
+	deleteSiteManager,
+} from "./SiteManager.controller";
+
 export default {
 	//Sample Controllers
 	insertSample,
@@ -54,4 +62,11 @@ export default {
 	getAllProducts,
 	getOneProduct,
 	updateProduct,
+
+	// Site Manager Controller
+	getSiteManagerDetails,
+	loginSiteManager,
+	registerSiteManager,
+	editSiteManagerDetails,
+	deleteSiteManager,
 };
