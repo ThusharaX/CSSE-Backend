@@ -30,6 +30,14 @@ import {
 	deleteSiteManager,
 } from "./SiteManager.service";
 
+import {
+	getProcurementStaffDetails,
+	authenticateProcurementStaff,
+	insertProcurementStaff,
+	editProcurementStaffDetails,
+	deleteProcurementStaff,
+} from "./ProcurementStaff.service";
+
 export default {
 	// Sample services
 	insertSample,
@@ -70,4 +78,11 @@ export default {
 	insertSiteManager,
 	editSiteManagerDetails,
 	deleteSiteManager,
+
+	// Procurement Staff Service
+	getProcurementStaffDetails,
+	authenticateProcurementStaff,
+	insertProcurementStaff,
+	editProcurementStaffDetails,
+	deleteProcurementStaff,
 };

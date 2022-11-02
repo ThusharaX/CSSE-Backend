@@ -29,6 +29,14 @@ import {
 	deleteSiteManager,
 } from "./SiteManager.controller";
 
+import {
+	getProcurementStaffDetails,
+	loginProcurementStaff,
+	registerProcurementStaff,
+	editProcurementStaffDetails,
+	deleteProcurementStaff,
+} from "./ProcurementStaff.controller";
+
 export default {
 	//Sample Controllers
 	insertSample,
@@ -69,4 +77,11 @@ export default {
 	registerSiteManager,
 	editSiteManagerDetails,
 	deleteSiteManager,
+
+	// Procurement Staff Controller
+	getProcurementStaffDetails,
+	loginProcurementStaff,
+	registerProcurementStaff,
+	editProcurementStaffDetails,
+	deleteProcurementStaff,
 };

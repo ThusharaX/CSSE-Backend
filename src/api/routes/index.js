@@ -50,4 +50,11 @@ router.get("/site-manager/:id", middleware.siteManager_auth, controller.getSiteM
 router.put("/site-manager-edit/:id", middleware.siteManager_auth, controller.editSiteManagerDetails);
 router.delete("/site-manager-delete/:id", controller.deleteSiteManager);
 
+// ProcurementStaff endpoints
+router.post("/procurement-staff/login", controller.loginProcurementStaff);
+router.post("/procurement-staff/signup", controller.registerProcurementStaff);
+router.get("/procurement-staff/:id", middleware.procurementStaff_auth, controller.getProcurementStaffDetails);
+router.put("/procurement-staff-edit/:id", middleware.procurementStaff_auth, controller.editProcurementStaffDetails);
+router.delete("/procurement-staff-delete/:id", controller.deleteProcurementStaff);
+
 export default router;
