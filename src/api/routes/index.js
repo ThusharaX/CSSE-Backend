@@ -35,8 +35,12 @@ router.delete("/manager-delete/:id", controller.deleteManager);
 
 // Order endpoints
 router.post("/order/", controller.insertOrder);
+router.get("/order/", controller.getAllOrders);
 
 // Product endpoints
 router.post("/product/", controller.insertProduct);
+router.get("/product/", controller.getAllProducts);
+router.get("/product/:id", controller.getOneProduct);
+router.put("/product-edit/:id", controller.updateProduct);
 
 export default router;
