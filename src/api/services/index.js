@@ -18,6 +18,11 @@ import {
 	deleteManager,
 } from "./Manager.service";
 
+
+import { insertOrder } from "./Order.service";
+
+import { insertProduct } from "./Product.service";
+
 import {
 	getSiteManagerDetails,
 	authenticateSiteManager,
@@ -25,6 +30,7 @@ import {
 	editSiteManagerDetails,
 	deleteSiteManager,
 } from "./SiteManager.service";
+
 
 export default {
 	// Sample services
@@ -50,10 +56,18 @@ export default {
 	editManagerDetails,
 	deleteManager,
 
+
+	// Order Service
+	insertOrder,
+
+	// Product Service
+	insertProduct,
+
 	// SiteManager Service
 	getSiteManagerDetails,
 	authenticateSiteManager,
 	insertSiteManager,
 	editSiteManagerDetails,
 	deleteSiteManager,
+
 };
