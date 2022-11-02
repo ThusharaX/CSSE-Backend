@@ -51,3 +51,16 @@ export const updateProduct = async (request, response, next) => {
 			next();
 		});
 };
+
+// Delete one sample
+export const deleteProduct = async (request, response, next) => {
+	await ProductService.deleteProduct(request.params.id)
+		.then((data) => {
+			request.handleResponse.successRespond(response)(data);
+			next();
+		})
+		.catch((error) => {
+			request.handleResponse.errorRespond(response)(error.message);
+			next();
+		});
+};
