@@ -23,5 +23,5 @@ export const clearDatabase = async () => {
 		const collection = collections[key];
 		await collection.deleteMany({});
 	}
-	// logger.info("🗑️ Database Cleared");
+	logger.info("🗑️ Database Cleared");
 };

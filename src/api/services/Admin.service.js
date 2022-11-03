@@ -1,5 +1,6 @@
 import AdminModel from "../models/Admin.model";
 
+// Admin Login
 export const authenticateAdmin = async (email, password) => {
 	return await AdminModel.findOne({ email })
 		.then(async (admin) => {
@@ -14,6 +15,7 @@ export const authenticateAdmin = async (email, password) => {
 		});
 };
 
+// Admin Signup
 export const insertAdmin = async (admin) => {
 	return await AdminModel.create(admin)
 		.then(async (admin) => {
