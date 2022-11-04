@@ -42,6 +42,7 @@ router.post("/product/", controller.insertProduct);
 router.get("/product/", controller.getAllProducts);
 router.get("/product/:id", controller.getOneProduct);
 router.put("/product-edit/:id", controller.updateProduct);
+router.delete("/product-delete/:id", controller.deleteProduct);
 
 // SiteManager endpoints
 router.post("/site-manager/login", controller.loginSiteManager);

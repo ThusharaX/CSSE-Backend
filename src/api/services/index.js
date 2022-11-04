@@ -20,7 +20,7 @@ import {
 
 import { insertOrder, getAllOrders } from "./Order.service";
 
-import { insertProduct, getAllProducts, getOneProduct, updateProduct } from "./Product.service";
+import { insertProduct, getAllProducts, getOneProduct, updateProduct, deleteProduct } from "./Product.service";
 
 import {
 	getSiteManagerDetails,
@@ -79,6 +79,7 @@ export default {
 	getAllProducts,
 	getOneProduct,
 	updateProduct,
+	deleteProduct,
 
 	// SiteManager Service
 	getSiteManagerDetails,

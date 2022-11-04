@@ -54,3 +54,18 @@ export const updateProduct = async (productId, productData) => {
 			throw new Error(error.message);
 		});
 };
+
+// Delete one product
+export const deleteProduct = async (sampleId) => {
+	return await ProductModel.findByIdAndDelete(sampleId)
+		.then((sample) => {
+			if (sample) {
+				return sample;
+			} else {
+				throw new Error("Sample not found");
+			}
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

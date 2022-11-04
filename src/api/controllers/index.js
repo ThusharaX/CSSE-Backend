@@ -19,7 +19,7 @@ import {
 } from "./Manager.controller";
 
 import { insertOrder, getAllOrders } from "./Order.controller";
-import { insertProduct, getAllProducts, getOneProduct, updateProduct } from "./Product.controller";
+import { insertProduct, getAllProducts, getOneProduct, updateProduct, deleteProduct } from "./Product.controller";
 
 import {
 	getSiteManagerDetails,
@@ -78,6 +78,7 @@ export default {
 	getAllProducts,
 	getOneProduct,
 	updateProduct,
+	deleteProduct,
 
 	// Site Manager Controller
 	getSiteManagerDetails,
