@@ -40,3 +40,19 @@ export const changeOrderStatus = async (orderId, status) => {
 			throw new Error(error.message);
 		});
 };
+
+// Get one order
+
+export const getOneOrder = async (orderId) => {
+	return await OrderModel.findById(orderId)
+		.then((order) => {
+			if (order) {
+				return order;
+			} else {
+				throw new Error("Order not found");
+			}
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

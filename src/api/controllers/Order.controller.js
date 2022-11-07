@@ -38,3 +38,16 @@ export const changeOrderStatus = async (request, response, next) => {
 			next();
 		});
 };
+
+// Get one order
+export const getOneOrder = async (request, response, next) => {
+	await OrderService.getOneOrder(request.params.id)
+		.then((data) => {
+			request.handleResponse.successRespond(response)(data);
+			next();
+		})
+		.catch((error) => {
+			request.handleResponse.errorRespond(response)(error.message);
+			next();
+		});
+};
