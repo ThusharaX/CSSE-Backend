@@ -22,3 +22,21 @@ export const getAllOrders = async () => {
 			throw new Error(error.message);
 		});
 };
+
+// Change order status
+export const changeOrderStatus = async (orderId, status) => {
+	return await OrderModel.findByIdAndUpdate(orderId, { status: status })
+		.then(async (order) => {
+			if (order) {
+				return {
+					message: "Order status changed successfully",
+					status: status,
+				};
+			} else {
+				throw new Error("Order not found");
+			}
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};
