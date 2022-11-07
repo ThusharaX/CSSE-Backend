@@ -18,7 +18,7 @@ import {
 	deleteManager,
 } from "./Manager.controller";
 
-import { insertOrder, getAllOrders, changeOrderStatus } from "./Order.controller";
+import { insertOrder, getAllOrders, changeOrderStatus, getOneOrder } from "./Order.controller";
 import { insertProduct, getAllProducts, getOneProduct, updateProduct, deleteProduct } from "./Product.controller";
 
 import {
@@ -73,6 +73,7 @@ export default {
 	insertOrder,
 	getAllOrders,
 	changeOrderStatus,
+	getOneOrder,
 
 	// Product Controller
 	insertProduct,

@@ -18,7 +18,7 @@ import {
 	deleteManager,
 } from "./Manager.service";
 
-import { insertOrder, getAllOrders, changeOrderStatus } from "./Order.service";
+import { insertOrder, getAllOrders, changeOrderStatus, getOneOrder } from "./Order.service";
 
 import { insertProduct, getAllProducts, getOneProduct, updateProduct, deleteProduct } from "./Product.service";
 
@@ -74,6 +74,7 @@ export default {
 	insertOrder,
 	getAllOrders,
 	changeOrderStatus,
+	getOneOrder,
 
 	// Product Service
 	insertProduct,

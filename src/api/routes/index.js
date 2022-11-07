@@ -37,6 +37,7 @@ router.delete("/manager-delete/:id", controller.deleteManager);
 router.post("/order/", controller.insertOrder);
 router.get("/order/", controller.getAllOrders);
 router.put("/order/:id", controller.changeOrderStatus);
+router.get("/order/:id", controller.getOneOrder);
 
 // Product endpoints
 router.post("/product/", controller.insertProduct);
