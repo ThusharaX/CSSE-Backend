@@ -66,5 +66,7 @@ router.post("/supplier/signup", controller.registerSupplier);
 router.get("/supplier/:id", middleware.supplier_auth, controller.getSupplierDetails);
 router.put("/supplier-edit/:id", middleware.supplier_auth, controller.editSupplierDetails);
 router.delete("/supplier-delete/:id", controller.deleteSupplier);
+// Get all suppliers
+router.get("/suppliers/", controller.getAllSuppliers);
 
 export default router;

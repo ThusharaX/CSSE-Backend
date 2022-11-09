@@ -57,3 +57,14 @@ export const deleteSupplier = async (userId) => {
 			throw new Error(error.message);
 		});
 };
+
+// Get All Suppliers
+export const getAllSuppliers = async () => {
+	return await SupplierModel.find()
+		.then((Suppliers) => {
+			return Suppliers;
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

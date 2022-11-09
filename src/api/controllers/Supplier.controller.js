@@ -102,3 +102,16 @@ export const deleteSupplier = async (req, res, next) => {
 			next();
 		});
 };
+
+// Get All Suppliers
+export const getAllSuppliers = async (req, res, next) => {
+	await SupplierService.getAllSuppliers()
+		.then((data) => {
+			req.handleResponse.successRespond(res)(data);
+			next();
+		})
+		.catch((error) => {
+			req.handleResponse.errorRespond(res)(error.message);
+			next();
+		});
+};

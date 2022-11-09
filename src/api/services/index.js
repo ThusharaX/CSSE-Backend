@@ -44,6 +44,7 @@ import {
 	insertSupplier,
 	editSupplierDetails,
 	deleteSupplier,
+	getAllSuppliers,
 } from "./Supplier.service";
 
 export default {
@@ -103,4 +104,5 @@ export default {
 	insertSupplier,
 	editSupplierDetails,
 	deleteSupplier,
+	getAllSuppliers,
 };

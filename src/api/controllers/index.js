@@ -43,6 +43,7 @@ import {
 	registerSupplier,
 	editSupplierDetails,
 	deleteSupplier,
+	getAllSuppliers,
 } from "./Supplier.controller";
 
 export default {
@@ -102,4 +103,5 @@ export default {
 	registerSupplier,
 	editSupplierDetails,
 	deleteSupplier,
+	getAllSuppliers,
 };
