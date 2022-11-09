@@ -19,6 +19,15 @@ router.put("/sample/:id", middleware.admin_auth, controller.updateSample); // up
 router.delete("/sample/:id", middleware.admin_auth, controller.deleteSample); // delete one sample
 router.get("/samples/admin/:id", middleware.admin_auth, controller.getAllSamplesByAdminId); // get all samples by admin id
 
+// Site endpoints
+router.post("/site/", controller.insertSite); // insert one site
+router.get("/site/", controller.getAllSites); // get all sites
+router.get("/site/search/:search", controller.searchSites); // search sites
+router.get("/site/:id", controller.getOneSite); // get one site
+router.put("/site/:id", controller.updateSite); // update one site
+router.delete("/site/:id", controller.deleteSite); // delete one site
+router.get("/sites/site-manager/:id", controller.getAllSitesBySiteManagerId); // get all sites by site-manager id
+
 // Admin endpoints
 router.post("/admin/login", controller.loginAdmin);
 router.post("/admin/signup", controller.registerAdmin);

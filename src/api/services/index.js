@@ -8,6 +8,16 @@ import {
 	getAllSamplesByAdminId,
 } from "./Sample.service";
 
+import {
+	insertSite,
+	getAllSites,
+	getOneSite,
+	updateSite,
+	deleteSite,
+	searchSites,
+	getAllSitesBySiteManagerId,
+} from "./Site.service";
+
 import { getAdminDetails, authenticateAdmin, insertAdmin, editAdminDetails, deleteAdmin } from "./Admin.service";
 
 import {
@@ -56,6 +66,15 @@ export default {
 	deleteSample,
 	searchSamples,
 	getAllSamplesByAdminId,
+	
+	// Site services
+	insertSite,
+	getAllSites,
+	getOneSite,
+	updateSite,
+	deleteSite,
+	searchSites,
+	getAllSitesBySiteManagerId,
 
 	// Admin Service
 	getAdminDetails,

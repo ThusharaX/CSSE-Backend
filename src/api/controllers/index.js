@@ -8,6 +8,16 @@ import {
 	getAllSamplesByAdminId,
 } from "./Sample.controller";
 
+import {
+	insertSite,
+	getAllSites,
+	getOneSite,
+	updateSite,
+	deleteSite,
+	searchSites,
+	getAllSitesBySiteManagerId,
+} from "./Site.controller";
+
 import { getAdminDetails, loginAdmin, registerAdmin, editAdminDetails, deleteAdmin } from "./Admin.controller";
 
 import {
@@ -55,6 +65,15 @@ export default {
 	deleteSample,
 	searchSamples,
 	getAllSamplesByAdminId,
+	
+	//Site Controllers
+	insertSite,
+	getAllSites,
+	getOneSite,
+	updateSite,
+	deleteSite,
+	searchSites,
+	getAllSitesBySiteManagerId,
 
 	// Admin Controller
 	getAdminDetails,
