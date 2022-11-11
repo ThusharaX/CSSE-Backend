@@ -56,3 +56,20 @@ export const getOneOrder = async (orderId) => {
 			throw new Error(error.message);
 		});
 };
+
+// Delete order
+export const deleteOrder = async (orderId) => {
+	return await OrderModel.findByIdAndDelete(orderId)
+		.then((order) => {
+			if (order) {
+				return {
+					message: "Order deleted successfully",
+				};
+			} else {
+				throw new Error("Order not found");
+			}
+		})
+		.catch((error) => {
+			throw new Error(error.message);
+		});
+};

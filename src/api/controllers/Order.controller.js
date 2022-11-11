@@ -51,3 +51,16 @@ export const getOneOrder = async (request, response, next) => {
 			next();
 		});
 };
+
+// Delete order
+export const deleteOrder = async (request, response, next) => {
+	await OrderService.deleteOrder(request.params.id)
+		.then((data) => {
+			request.handleResponse.successRespond(response)(data);
+			next();
+		})
+		.catch((error) => {
+			request.handleResponse.errorRespond(response)(error.message);
+			next();
+		});
+};

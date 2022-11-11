@@ -28,7 +28,7 @@ import {
 	deleteManager,
 } from "./Manager.controller";
 
-import { insertOrder, getAllOrders, changeOrderStatus, getOneOrder } from "./Order.controller";
+import { insertOrder, getAllOrders, changeOrderStatus, getOneOrder, deleteOrder } from "./Order.controller";
 import { insertProduct, getAllProducts, getOneProduct, updateProduct, deleteProduct } from "./Product.controller";
 
 import {
@@ -65,7 +65,7 @@ export default {
 	deleteSample,
 	searchSamples,
 	getAllSamplesByAdminId,
-	
+
 	//Site Controllers
 	insertSite,
 	getAllSites,
@@ -94,6 +94,7 @@ export default {
 	getAllOrders,
 	changeOrderStatus,
 	getOneOrder,
+	deleteOrder,
 
 	// Product Controller
 	insertProduct,
