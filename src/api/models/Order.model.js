@@ -44,6 +44,12 @@ const OrderSchema = new mongoose.Schema(
 			ref: "SiteManager",
 			required: true,
 		},
+		// Supplier id refers to orders table who make order
+		supplierID: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: "Supplier",
+			required: true,
+		},
 		deletedAt: {
 			type: Date,
 			required: false,
