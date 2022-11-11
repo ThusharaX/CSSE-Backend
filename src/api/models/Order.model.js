@@ -38,6 +38,10 @@ const OrderSchema = new mongoose.Schema(
 			ref: "Product",
 			required: true,
 		},
+		productName: {
+			type: String,
+			required: true,
+		},
 		// Site Manager id refers to orders table who make order
 		siteManagerID: {
 			type: mongoose.Schema.Types.ObjectId,
